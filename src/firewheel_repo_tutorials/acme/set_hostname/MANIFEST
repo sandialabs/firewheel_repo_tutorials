@@ -1,0 +1,12 @@
+name: acme.set_hostname
+attributes:
+    depends:
+        - acme_topology
+    provides:
+        - hostnames
+model_components:
+    depends:
+        - linux.ubuntu1604
+plugin: plugin.py
+vm_resources:
+    - set_hostname.py

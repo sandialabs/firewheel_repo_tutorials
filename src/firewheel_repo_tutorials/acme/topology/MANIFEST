@@ -1,0 +1,13 @@
+name: acme.topology
+attributes:
+    depends:
+        - graph
+    provides:
+        - topology
+        - acme_topology
+model_components:
+    depends:
+        - base_objects
+        - vyos.helium118
+        - linux.ubuntu2204
+plugin: plugin.py

@@ -1,0 +1,16 @@
+attributes:
+  depends:
+  - graph
+  precedes: []
+  provides:
+  - topology
+model_component_objects: model_component_objects.py
+model_components:
+  depends:
+  - linux.ubuntu1604
+  - base_objects
+  precedes: []
+name: tutorials.simple_server
+plugin: plugin.py
+vm_resources:
+  - vm_resources/*

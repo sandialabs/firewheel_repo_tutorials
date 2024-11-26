@@ -1,0 +1,9 @@
+name: acme.run
+attributes:
+    depends:
+        - acme_topology
+        - hostnames
+    provides:
+        - acme_run
+model_components:
+    depends: []

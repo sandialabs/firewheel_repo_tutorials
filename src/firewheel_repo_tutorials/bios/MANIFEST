@@ -1,0 +1,17 @@
+attributes:
+  depends:
+  - graph
+  precedes: []
+  provides:
+  - topology
+images:
+- architecture: x86_64
+  paths:
+  - images/bios.bin.tar.gz
+model_components:
+  depends:
+  - base_objects
+  - linux.ubuntu1604
+  precedes: []
+name: tutorials.bios
+plugin: plugin.py
